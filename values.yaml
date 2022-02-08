@@ -93,3 +93,7 @@ livenessProbe:
 
 readinessProbe:
   initialDelaySeconds: 300
+
+nuxtjs:
+  env:
+    BASE_URL: "https://api.00x56.com/api"

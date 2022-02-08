@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "nuxt-app.fullname" . }}
+  labels:
+    {{- include "nuxt-app.labels" . | nindent 4 }}
+data:
+  BASE_URL: {{ .Values.nuxtjs.env.BASE_URL | quote }}
