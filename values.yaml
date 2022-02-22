@@ -90,9 +90,13 @@ affinity: {}
 
 livenessProbe:
   initialDelaySeconds: 300
+  periodSeconds: 10
+  timeoutSeconds: 5
 
 readinessProbe:
   initialDelaySeconds: 300
+  periodSeconds: 10
+  timeoutSeconds: 5
 
 nuxtjs:
   env:
